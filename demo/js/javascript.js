@@ -1,11 +1,11 @@
-var username = prompt('enter your name')
+let username = prompt('enter your name')
 console.log(username)
 
 alert('welcome ' + username)
 
-for(var question = 1 ; question <= 5 ; question++)
+for(let question = 1 ; question <= 5 ; question++)
 {
-    var answer;
+    let answer;
     switch(question)
     {
         case 1:
@@ -43,5 +43,50 @@ for(var question = 1 ; question <= 5 ; question++)
     }
 }
 
+
+for(let useranswer1 = 1; useranswer1 < 5 ; useranswer1++ )
+{
+    let mytall = prompt('can you guess my tall ?')
+    console.log(mytall)
+
+    if (mytall < 155){
+       alert('too low')
+    }
+
+    if(mytall > 155){
+        alert('too high')
+    }
+    if(mytall == 155){
+        alert('right answer')
+        break
+    }
+}
+alert('the right answer is 155')
+
+let drinks = new Array ('coffee','tea','water')
+let breakk = false
+for(let useranswer2 = 1; useranswer2 < 7 ; useranswer2++ )
+{
+    let drink = prompt('can you guess my faviorate drink ?')
+    console.log(drink)
+
+    for(let drinkloop = 0 ;drinkloop < 3 ;drinkloop++ ){
+
+        if(drink === drinks[drinkloop])
+        {
+            alert('right answer')
+            breakk = true
+        }
+
+    }
+    
+    if (breakk === true){
+         break
+    }
+
+}
+
+let mark = 0 
+for (let userMark = 0 ; answer = answer !== 'yes' && answer !== 'y' ; userMark++)
 
 alert('i had fun, nice to meet you  ' + username)
