@@ -41,7 +41,7 @@ for(let question = 1 ; question <= 5 ; question++)
 
   if (answer === 'yes' || answer === 'y')
   {
-    alert('right answer');
+    alert('right answer')
     // eslint-disable-next-line no-unused-vars
     result++;
 
