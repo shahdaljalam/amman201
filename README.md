@@ -1,4 +1,7 @@
 # amman201
+I have created this guissing game to play with the user by making him guessing information about me.
+It is a 7 questions game and at the end I will print the result. 
+
 
 ## Driver : Raneemabutair
 

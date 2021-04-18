@@ -9,87 +9,82 @@ console.log(username);
 
 alert('welcome ' + username);
 
-for(let question = 1 ; question <= 5 ; question++)
-{
+for (let question = 1; question <= 5; question++) {
   let answer;
-  switch(question)
-  {
-  case 1:
-    answer = prompt('do you think that i am a girl ?');
-    break;
-  case 2:
-    answer = prompt('do you think that i am oldar than 25 ?');
-    break;
-  case 3:
-    answer = prompt('do you think that i studied engineering ?');
-    break;
-  case 4:
-    answer = prompt('do you think that i am a good programer ?');
-    break;
-  case 5:
-    answer = prompt('did you enjoy ?');
-    break;
+  switch (question) {
+    case 1:
+      answer = prompt('do you think that i am a girl ?');
+      break;
+    case 2:
+      answer = prompt('do you think that i am oldar than 25 ?');
+      break;
+    case 3:
+      answer = prompt('do you think that i studied engineering ?');
+      break;
+    case 4:
+      answer = prompt('do you think that i am a good programer ?');
+      break;
+    case 5:
+      answer = prompt('did you enjoy ?');
+      break;
   }
 
   answer = answer.toLowerCase();
 
-  while(answer !== 'yes' && answer !== 'y' && answer !== 'no' && answer !== 'n')
-  {
+  while (answer !== 'yes' && answer !== 'y' && answer !== 'no' && answer !== 'n') {
     answer = prompt('do you think that i am a girl ?');
     answer = answer.toLowerCase();
   }
 
-  if (answer === 'yes' || answer === 'y')
-  {
+  if (answer === 'yes' || answer === 'y') {
     alert('right answer')
     // eslint-disable-next-line no-unused-vars
     result++;
 
   }
-  else
-  {
+  else {
     alert('wrong answer');
   }
 }
 
-function mytall(){
-  for(let useranswer1 = 1; useranswer1 < 5 ; useranswer1++ )
-  {
+function mytall() {
+  let aswerCorrectly = false;
+  for (let useranswer1 = 1; useranswer1 < 5; useranswer1++) {
     let mytall = prompt('can you guess my tall ?');
     console.log(mytall);
 
-    if (mytall < 155){
+    if (mytall < 155) {
       alert('too low');
     }
 
-    if(mytall > 155){
+    if (mytall > 155) {
       alert('too high');
     }
     // eslint-disable-next-line eqeqeq
-    if(mytall == 155){
+    if (mytall == 155) {
       alert('right answer');
       result++;
-
+      aswerCorrectly = true;
       break;
     }
   }
+  if (aswerCorrectly == false) {
+
+    alert('the right answer is 155');
+  }
 }
+
 mytall();
 
-
-alert('the right answer is 155');
-
-let drinks = new Array ('coffee','tea','water');
+let drinks = new Array('coffee', 'tea', 'water');
 let breakk = false;
-for(let useranswer2 = 1; useranswer2 < 7 ; useranswer2++ )
-{
+for (let useranswer2 = 1; useranswer2 < 7; useranswer2++) {
   let drink = prompt('can you guess my faviorate drink ?');
   console.log(drink);
 
-  for(let drinkloop = 0 ;drinkloop < 3 ;drinkloop++ ){
+  for (let drinkloop = 0; drinkloop < 3; drinkloop++) {
 
-    if(drink === drinks[drinkloop])
-    {
+    if (drink === drinks[drinkloop]) {
       alert('right answer');
       result++;
 
@@ -98,10 +93,13 @@ for(let useranswer2 = 1; useranswer2 < 7 ; useranswer2++ )
 
   }
 
-  if (breakk === true){
+  if (breakk === true) {
     break;
   }
 
+}
+if (breakk == false) {
+  alert("my fav drinks are coffee , tea, and water")
 }
 
 /* let mark = 0;
